@@ -1,0 +1,24 @@
+{
+  "name": "msw-worker-restart-bypass-issue",
+  "version": "0.0.0",
+  "private": false,
+  "packageManager": "pnpm@10.31.0",
+  "scripts": {
+    "test": "vitest",
+    "postinstall": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@vitest/browser": "^4.1.4",
+    "@vitest/browser-playwright": "^4.1.4",
+    "msw": "^2.13.3",
+    "playwright": "^1.59.1",
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
+  }
+}
